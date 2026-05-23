@@ -49,37 +49,26 @@
   /* Logo image placeholder box in hero */
   .logo-row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 14px;
+  margin-bottom: 26px;
 }
   .logo-placeholder {
-    width: 56px;
-    height: 56px;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.08);
-    border: 2px dashed rgba(184,134,11,0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    overflow: hidden;
-  }
+  width: 58px;
+  height: 58px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
   .logo-placeholder img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 8px;
-    background: white;
-    padding: 4px;
-  }
-  .logo-placeholder-label {
-    font-size: 9px;
-    color: rgba(255,255,255,0.4);
-    text-align: center;
-    letter-spacing: 0.5px;
-    padding: 2px 4px;
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: white;
+  padding: 3px;
+  border-radius: 8px;
+}
   .logo-text h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 22px;
@@ -349,14 +338,12 @@
 
   /* ——— DAY PHOTO BOX ——— */
   .day-photo {
-  display: inline-block;
-  max-width: 100%;
+  display: inline-flex;
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 16px;
   border: 1px dashed rgba(184,134,11,0.4);
   background: var(--accent-bg);
-  position: relative;
 }
   .day-photo img {
   display: block;
@@ -366,7 +353,6 @@
   height: auto;
   object-fit: contain;
   object-position: left center;
-  background: #f8f6f1;
 }
   .day-photo-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; width: 100%; height: 100%; }
   .day-photo-icon { width: 36px; height: 36px; border-radius: 50%; background: rgba(184,134,11,0.12); border: 1px dashed rgba(184,134,11,0.5); display: flex; align-items: center; justify-content: center; font-size: 16px; }
@@ -375,7 +361,13 @@
 
   /* ——— ITINERARY DAYS ——— */
   .days-container { padding: 0 40px 40px; }
-  .day-block { display: grid; grid-template-columns: 100px 1fr; gap: 0 24px; margin-bottom: 6px; position: relative; }
+  .day-block {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 0 24px;
+  margin-bottom: 0;
+  position: relative;
+}
   .day-left {
   padding-top: 6px;
   position: relative;
@@ -386,10 +378,11 @@
   .day-left::after {
   content: '';
   position: absolute;
-  top: 40px;
-  bottom: -30px;
+  top: 34px;
+  bottom: -12px;
   left: 50%;
   width: 1px;
+  transform: translateX(-50%);
   background: var(--border);
 }
   .day-block:last-child .day-left::after { display: none; }
@@ -673,7 +666,6 @@
     <!-- LOGO: add src="your-logo-path" inside the img tag below -->
     <div class="logo-placeholder">
       <img src="assets/sba-logo.jpg" alt="Shreeji Bapa Aviation Logo" onerror="this.style.display='none'">
-      <div class="logo-placeholder-label">Logo here</div>
     </div>
     <div class="logo-text">
       <h1>Shreeji Bapa Aviation</h1>
@@ -1103,6 +1095,7 @@
   </div>
 
   <div class="print-page">
+  <div class="days-container">
   <!-- Day 3 -->
   <div class="day-block">
     <div class="day-left">
@@ -1166,8 +1159,10 @@
     </div>
   </div>
   </div>
-
+  </div>
+  
   <div class="print-page">
+  <div class="days-container">
   <!-- Day 5 -->
   <div class="day-block">
     <div class="day-left">
@@ -1241,8 +1236,10 @@
     </div>
   </div>
   </div>
+  </div>
 
-  <div class="print-page">  
+  <div class="print-page">
+  <div class="days-container"> 
   <!-- Day 7 -->
   <div class="day-block">
     <div class="day-left">
@@ -1320,6 +1317,7 @@
     </div>
   </div>
 
+</div>
 </div>
 </div>
 
