@@ -623,27 +623,18 @@
   .farewell-msg { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.85; margin-bottom: 48px; font-weight: 300; }
   .farewell-msg strong { color: rgba(255,255,255,0.82); font-weight: 400; }
 
-  @media print {
+ @media print {
 
   @page {
-  size: auto;
-  margin: 12mm;
-}
+    size: auto;
+    margin: 10mm;
+  }
 
   body {
     background: white !important;
+    font-size: 12px;
+    line-height: 1.45;
   }
-
-  .day-block,
-.day-right,
-.flight-card,
-.hotel-card,
-.pax-card,
-.incl-card,
-.notes-card {
-  page-break-inside: avoid;
-  break-inside: avoid;
-}
 
   .print-page {
     page-break-after: always;
@@ -654,8 +645,72 @@
     page-break-after: auto;
   }
 
+  .hero {
+    padding: 34px 40px 32px;
+  }
+
+  .logo-row {
+    margin-bottom: 18px;
+  }
+
+  .hero-title {
+    font-size: 38px;
+  }
+
+  .hero-sub {
+    margin-bottom: 18px;
+  }
+
+  .section {
+    padding: 24px 40px 0;
+  }
+
+  .days-container {
+    padding: 0 40px 18px;
+  }
+
+  .day-right {
+    padding: 16px 18px;
+    margin-bottom: 10px;
+  }
+
+  .day-headline {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+
+  .day-photo {
+    margin-bottom: 10px;
+  }
+
+  .day-photo img {
+    max-height: 155px;
+  }
+
+  .timeline {
+    gap: 7px;
+  }
+
+  .tl-text {
+    font-size: 12px;
+  }
+
+  .overnight-tag {
+    margin-top: 8px;
+    font-size: 10px;
+  }
+
+  .day-block,
+  .day-right,
+  .flight-card,
+  .hotel-card,
+  .pax-card,
+  .incl-card,
+  .notes-card {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
 }
-  
 </style>
 </head>
 <body>
