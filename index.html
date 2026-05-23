@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>China Tour Itinerary — Ms. Kavita Thakker | Shreeji Bapa Aviation</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #C0392B;
+    --gold: #B8860B;
+    --gold-light: #F5E6B2;
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --bg: #FDFAF4;
+    --card: #FFFFFF;
+    --border: rgba(184,134,11,0.2);
+    --accent-bg: #FEF9EC;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--ink); font-size: 15px; line-height: 1.7; }
+
+  /* ——— HERO ——— */
+  .hero {
+    background: linear-gradient(160deg, #1a0a0a 0%, #2d0808 40%, #1a0e00 100%);
+    color: white;
+    padding: 56px 40px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(184,134,11,0.18) 0%, transparent 70%);
+  }
+  .hero::after {
+    content: '中国';
+    position: absolute;
+    right: 40px; bottom: -20px;
+    font-size: 160px;
+    font-family: serif;
+    color: rgba(255,255,255,0.04);
+    letter-spacing: -8px;
+    line-height: 1;
+  }
+  /* Logo image placeholder box in hero */
+  .logo-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .logo-placeholder {
+    width: 72px;
+    height: 72px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.08);
+    border: 2px dashed rgba(184,134,11,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .logo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    background: white;
+    padding: 4px;
+  }
+  .logo-placeholder-label {
+    font-size: 9px;
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    letter-spacing: 0.5px;
+    padding: 2px 4px;
+  }
+  .logo-text h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--gold-light);
+    letter-spacing: 0.5px;
+  }
+  .logo-text p {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .hero-title em { color: var(--gold-light); font-style: italic; }
+  .hero-sub {
+    font-size: 13px;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  /* Curated-for highlight */
+  .curated-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(184,134,11,0.15);
+    border: 1px solid rgba(184,134,11,0.45);
+    border-radius: 30px;
+    padding: 7px 18px;
+    margin-bottom: 24px;
+  }
+  .curated-pill-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .curated-pill-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--gold-light);
+  }
+  .hero-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+  .hero-tag {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(184,134,11,0.35);
+    color: var(--gold-light);
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  /* ——— KEY INFO STRIP ——— */
+  .info-strip {
+    background: var(--gold);
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .info-item {
+    flex: 1;
+    min-width: 140px;
+    padding: 18px 20px 18px 0;
+    border-right: 1px solid rgba(255,255,255,0.25);
+  }
+  .info-item:last-child { border-right: none; }
+  .info-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: rgba(255,255,255,0.7); margin-bottom: 4px; }
+  .info-value { font-size: 14px; font-weight: 500; color: white; }
+
+  /* ——— SECTION WRAPPER ——— */
+  .section { padding: 44px 40px 0; }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  /* ——— PAX COUNT STRIP ——— */
+  .pax-count-strip {
+    display: flex;
+    align-items: center;
+    background: #1a0a0a;
+    border-radius: 12px;
+    padding: 20px 28px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .pax-count-item { flex: 1; min-width: 80px; text-align: center; }
+  .pax-count-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--gold-light);
+    line-height: 1;
+  }
+  .pax-count-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: rgba(255,255,255,0.45); margin-top: 4px; }
+  .pax-count-divider { width: 1px; height: 48px; background: rgba(184,134,11,0.25); margin: 0 16px; flex-shrink: 0; }
+
+  /* ——— PAX CARD ——— */
+  .pax-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+  .pax-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 4px;
+  }
+  .pax-item { display: flex; align-items: center; gap: 12px; }
+  .pax-avatar {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 500; flex-shrink: 0;
+  }
+  .pax-avatar.red { background: #FDECEA; color: var(--red); }
+  .pax-avatar.gold { background: var(--gold-light); color: var(--gold); }
+  .pax-name { font-size: 13px; font-weight: 500; }
+  .pax-note { font-size: 11px; color: var(--muted); }
+  .pax-lead .pax-name { color: var(--gold); }
+
+  /* ——— FLIGHT CARD ——— */
+  .flights-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 0; }
+  @media (max-width: 600px) { .flights-grid { grid-template-columns: 1fr; } }
+  .flight-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .flight-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--gold);
+  }
+  .flight-route { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
+  .flight-meta { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
+  .flight-times { display: flex; align-items: center; gap: 0; margin-bottom: 12px; }
+  .time-block { flex: 1; }
+  .time-big { font-size: 22px; font-weight: 500; color: var(--ink); line-height: 1; }
+  .time-city { font-size: 11px; color: var(--muted); margin-top: 3px; }
+  .time-date { font-size: 11px; color: var(--muted); }
+  .flight-line { flex: 1; text-align: center; position: relative; padding: 0 8px; }
+  .flight-line::before {
+    content: '';
+    display: block; height: 1px;
+    background: var(--border);
+    position: absolute; top: 50%; left: 0; right: 0;
+  }
+  .flight-dot {
+    display: inline-block;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 2px 8px;
+    font-size: 10px; color: var(--muted);
+    position: relative; z-index: 1;
+  }
+  .flight-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    font-size: 12px; color: var(--muted);
+  }
+  .sq-badge { background: #003791; color: white; font-size: 10px; font-weight: 500; padding: 3px 8px; border-radius: 4px; letter-spacing: 0.5px; }
+  .class-badge { background: var(--gold-light); color: var(--gold); font-size: 10px; font-weight: 500; padding: 3px 8px; border-radius: 4px; }
+
+  /* ——— SEAT TABLE ——— */
+  .seat-table-wrap { overflow-x: auto; margin-bottom: 0; }
+  .seat-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .seat-table th {
+    background: #1a0a0a;
+    color: rgba(255,255,255,0.6);
+    font-size: 10px; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 1.5px;
+    padding: 10px 14px; text-align: left;
+  }
+  .seat-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--ink);
+    background: var(--card);
+  }
+  .seat-table tr:last-child td { border-bottom: none; }
+  .seat-table td:first-child { font-weight: 500; }
+  .seat-badge { background: var(--gold-light); color: var(--gold); font-size: 10px; padding: 2px 7px; border-radius: 4px; font-weight: 500; }
+
+  /* ——— PNR GROUP BOX ——— */
+  .pnr-group {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  .pnr-group-header {
+    background: #1a0a0a;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .pnr-group-title { font-size: 13px; font-weight: 500; color: var(--gold-light); }
+  .pnr-badge { background: rgba(184,134,11,0.2); color: var(--gold-light); font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 20px; letter-spacing: 1px; }
+  .pnr-pax-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .pnr-pax-row:last-child { border-bottom: none; }
+  .pnr-avatar { width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; flex-shrink: 0; }
+  .pnr-avatar.gold { background: var(--gold-light); color: var(--gold); }
+  .pnr-avatar.red { background: #FDECEA; color: var(--red); }
+  .pnr-avatar.blue { background: #E6F1FB; color: #185FA5; }
+  .pnr-info { flex: 1; }
+  .pnr-name { font-size: 13px; font-weight: 500; color: var(--ink); }
+  .pnr-ticket { font-size: 11px; color: var(--muted); margin-top: 1px; font-family: monospace; }
+  .pnr-seats { display: flex; gap: 6px; flex-wrap: wrap; }
+
+  /* ——— HOTELS ——— */
+  .hotels-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 0; }
+  @media (max-width: 600px) { .hotels-row { grid-template-columns: 1fr; } }
+  .hotel-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  .hotel-city { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 6px; }
+  .hotel-name { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; line-height: 1.2; margin-bottom: 8px; }
+  .hotel-dates { font-size: 12px; color: var(--muted); padding: 6px 10px; background: var(--accent-bg); border-radius: 6px; display: inline-block; margin-bottom: 12px; }
+  .hotel-guide { font-size: 12px; color: var(--ink); }
+  .hotel-guide strong { color: var(--muted); font-weight: 400; }
+
+  /* ——— DAY PHOTO BOX ——— */
+  .day-photo {
+    width: 100%; height: 200px;
+    border-radius: 8px; overflow: hidden;
+    margin-bottom: 16px;
+    border: 1px dashed rgba(184,134,11,0.4);
+    background: var(--accent-bg);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    position: relative;
+  }
+  .day-photo img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 8px; }
+  .day-photo-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; width: 100%; height: 100%; }
+  .day-photo-icon { width: 36px; height: 36px; border-radius: 50%; background: rgba(184,134,11,0.12); border: 1px dashed rgba(184,134,11,0.5); display: flex; align-items: center; justify-content: center; font-size: 16px; }
+  .day-photo-label { font-size: 11px; color: var(--gold); font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; }
+  .day-photo-sublabel { font-size: 11px; color: var(--muted); font-family: monospace; }
+
+  /* ——— ITINERARY DAYS ——— */
+  .days-container { padding: 0 40px 40px; }
+  .day-block { display: grid; grid-template-columns: 100px 1fr; gap: 0 24px; margin-bottom: 6px; position: relative; }
+  .day-left { padding-top: 6px; position: relative; }
+  .day-left::after {
+    content: ''; position: absolute;
+    top: 40px; left: 50%;
+    width: 1px; height: calc(100% - 10px);
+    background: var(--border);
+  }
+  .day-block:last-child .day-left::after { display: none; }
+  .day-num { background: var(--red); color: white; font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; text-align: center; padding: 6px 4px; border-radius: 8px; margin-bottom: 4px; }
+  .day-date { font-size: 11px; color: var(--muted); text-align: center; }
+  .day-right { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 22px; margin-bottom: 12px; }
+  .day-city-tag { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 6px; }
+  .day-headline { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 14px; line-height: 1.2; }
+  .timeline { display: flex; flex-direction: column; gap: 12px; }
+  .tl-item { display: flex; gap: 14px; align-items: flex-start; }
+  .tl-time { font-size: 12px; font-weight: 500; color: var(--gold); min-width: 46px; padding-top: 2px; font-variant-numeric: tabular-nums; }
+  .tl-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold-light); border: 2px solid var(--gold); margin-top: 6px; flex-shrink: 0; }
+  .tl-text { font-size: 14px; color: var(--ink); flex: 1; }
+  .tl-text .highlight { color: var(--red); font-weight: 500; }
+  .overnight-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; color: var(--muted); background: var(--accent-bg); border: 1px solid var(--border); padding: 4px 10px; border-radius: 20px; margin-top: 14px; }
+
+  /* ——— INCLUSIONS ——— */
+  .incl-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 0; }
+  @media (max-width: 600px) { .incl-grid { grid-template-columns: 1fr; } }
+  .incl-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  .incl-card h3 { font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 14px; }
+  .incl-card h3.green { color: #2d7a40; }
+  .incl-card h3.red { color: var(--red); }
+  .incl-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .incl-list li { display: flex; gap: 10px; font-size: 13px; align-items: flex-start; }
+  .incl-list li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; margin-top: 7px; }
+  .incl-list.yes li::before { background: #2d7a40; }
+  .incl-list.no li::before { background: var(--red); }
+
+  /* ——— CONTACTS ——— */
+  .contact-card {
+    background: #1a0a0a;
+    border-radius: 12px;
+    padding: 28px 30px;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .contact-role { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.4); margin-bottom: 4px; }
+  .contact-name { font-size: 15px; font-weight: 500; color: white; margin-bottom: 2px; }
+  .contact-phone { font-size: 14px; color: var(--gold-light); }
+
+  /* ——— NOTES ——— */
+  .notes-card { background: var(--accent-bg); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 0; }
+  .notes-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 600; color: var(--gold); margin-bottom: 16px; }
+  .notes-list { display: flex; flex-direction: column; gap: 12px; }
+  .note-item { display: flex; gap: 12px; font-size: 13px; color: var(--ink); }
+  .note-num { background: var(--gold); color: white; font-size: 10px; font-weight: 500; min-width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+
+  /* ——— FAREWELL ——— */
+  .farewell-section {
+    background: #0e0604;
+    margin-top: 44px;
+    position: relative;
+    overflow: hidden;
+  }
+  .farewell-top-border {
+    height: 3px;
+    background: linear-gradient(90deg, transparent 0%, var(--gold) 30%, #e8c96a 50%, var(--gold) 70%, transparent 100%);
+  }
+  .farewell-bg-text {
+    position: absolute;
+    bottom: -40px; left: 50%;
+    transform: translateX(-50%);
+    font-family: serif;
+    font-size: 220px;
+    color: rgba(255,255,255,0.02);
+    white-space: nowrap;
+    pointer-events: none;
+    letter-spacing: -6px;
+    line-height: 1;
+  }
+  .farewell-inner {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 72px 40px 0;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  .farewell-eyebrow {
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(184,134,11,0.6);
+    margin-bottom: 24px;
+  }
+  .farewell-wish {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+  .farewell-wish em { color: var(--gold-light); font-style: italic; }
+  .farewell-name-line {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    font-style: italic;
+    color: rgba(184,134,11,0.75);
+    margin-bottom: 40px;
+    letter-spacing: 0.3px;
+  }
+  .farewell-divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 auto 40px;
+    max-width: 280px;
+  }
+  .farewell-divider::before { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, rgba(184,134,11,0.4)); }
+  .farewell-divider::after  { content: ''; flex: 1; height: 1px; background: linear-gradient(270deg, transparent, rgba(184,134,11,0.4)); }
+  .farewell-divider-icon { color: var(--gold); font-size: 11px; letter-spacing: 5px; }
+  .farewell-msg {
+    font-size: 15px;
+    color: rgba(255,255,255,0.5);
+    line-height: 2.1;
+    margin-bottom: 52px;
+    font-weight: 300;
+  }
+  .farewell-msg strong { color: rgba(255,255,255,0.82); font-weight: 400; }
+  .farewell-sig {
+    font-size: 11px;
+    color: rgba(255,255,255,0.28);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 56px;
+  }
+  .farewell-sig span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--gold-light);
+    display: block;
+    margin-top: 8px;
+    text-transform: none;
+    letter-spacing: 0.3px;
+  }
+  .farewell-logo-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(184,134,11,0.06);
+    border-top: 1px solid rgba(184,134,11,0.18);
+    padding: 24px 40px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  .farewell-logo-placeholder {
+    width: 52px; height: 52px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    border: 1px dashed rgba(184,134,11,0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .farewell-logo-placeholder img { width: 100%; height: 100%; object-fit: contain; border-radius: 6px; background: white; padding: 3px; }
+  .farewell-logo-placeholder-text { font-size: 8px; color: rgba(255,255,255,0.25); text-align: center; letter-spacing: 0.3px; padding: 2px 3px; }
+  .farewell-logo-name { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-weight: 600; color: var(--gold-light); margin-bottom: 3px; }
+  .farewell-logo-contact { font-size: 11px; color: rgba(255,255,255,0.4); margin-bottom: 2px; }
+  .farewell-logo-addr { font-size: 10px; color: rgba(255,255,255,0.22); }
+
+  /* ——— PACKING LIST ——— */
+  .pack-section {
+    background: var(--bg);
+    padding: 0 40px;
+  }
+  .weather-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  @media (max-width:600px) { .weather-strip { grid-template-columns: 1fr; } }
+  .weather-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .weather-icon { font-size: 32px; flex-shrink: 0; line-height: 1; margin-top: 2px; }
+  .weather-city { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 3px; }
+  .weather-temp { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; color: var(--ink); line-height: 1; margin-bottom: 4px; }
+  .weather-desc { font-size: 12px; color: var(--muted); line-height: 1.6; }
+  .weather-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+  .weather-tag { font-size: 10px; background: var(--accent-bg); border: 1px solid var(--border); color: var(--gold); padding: 2px 8px; border-radius: 10px; }
+
+  .pack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+  .pack-col { }
+  .pack-col-title {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gold);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .pack-items { display: flex; flex-direction: column; gap: 8px; }
+  .pack-item { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: var(--ink); }
+  .pack-check {
+    width: 14px; height: 14px;
+    border: 1.5px solid rgba(184,134,11,0.45);
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+  .pack-tip {
+    background: #1a0a0a;
+    border-radius: 10px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 44px;
+  }
+  .pack-tip-icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+  .pack-tip-text { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.7; }
+  .pack-tip-text strong { color: var(--gold-light); font-weight: 500; }
+
+  /* ——— FAREWELL SIMPLIFIED ——— */
+  .farewell-msg { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.85; margin-bottom: 48px; font-weight: 300; }
+  .farewell-msg strong { color: rgba(255,255,255,0.82); font-weight: 400; }
+
+  @media print {
+    .hero { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .flight-card::before { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="logo-row">
+    <!-- LOGO: add src="your-logo-path" inside the img tag below -->
+    <div class="logo-placeholder">
+      <img src="" alt="Shreeji Bapa Aviation Logo" onerror="this.style.display='none'">
+      <div class="logo-placeholder-label">Logo here</div>
+    </div>
+    <div class="logo-text">
+      <h1>Shreeji Bapa Aviation</h1>
+      <p>Your Journey, Our Promise</p>
+    </div>
+  </div>
+  <div class="hero-sub">Travel Itinerary · May – June 2026</div>
+  <div class="hero-title">Shanghai <em>&</em> Beijing<br>Discovery Tour</div>
+  <div class="curated-pill">
+    <span class="curated-pill-label">Exclusively curated for</span>
+    <span class="curated-pill-name">Ms. Kavita Thakker</span>
+  </div>
+  <div class="hero-tags">
+    <span class="hero-tag">✈ Business Class</span>
+    <span class="hero-tag">🏨 5-Star Hotels</span>
+    <span class="hero-tag">🚄 High-Speed Rail</span>
+    <span class="hero-tag">8 Days · 7 Nights</span>
+    <span class="hero-tag">👥 5 Travellers · 4 Adults · 1 Child</span>
+  </div>
+</div>
+
+<!-- INFO STRIP -->
+<div class="info-strip">
+  <div class="info-item">
+    <div class="info-label">Departure</div>
+    <div class="info-value">25 May 2026</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">Return</div>
+    <div class="info-value">2 June 2026</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">Shanghai Stay</div>
+    <div class="info-value">4 Nights</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">Beijing Stay</div>
+    <div class="info-value">3 Nights</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">Airline PNR</div>
+    <div class="info-value">7AIOVX / 9QHA2Z</div>
+  </div>
+</div>
+
+<!-- PASSENGERS -->
+<div class="section">
+  <div class="section-title">Travelling Party</div>
+</div>
+<div style="padding: 0 40px;">
+  <div class="pax-count-strip">
+    <div class="pax-count-item">
+      <div class="pax-count-num">5</div>
+      <div class="pax-count-label">Total Travellers</div>
+    </div>
+    <div class="pax-count-divider"></div>
+    <div class="pax-count-item">
+      <div class="pax-count-num">4</div>
+      <div class="pax-count-label">Adults</div>
+    </div>
+    <div class="pax-count-divider"></div>
+    <div class="pax-count-item">
+      <div class="pax-count-num">1</div>
+      <div class="pax-count-label">Child</div>
+    </div>
+    <div class="pax-count-divider"></div>
+    <div class="pax-count-item" style="flex:2; text-align:left; padding-left:24px;">
+      <div style="font-size:10px; text-transform:uppercase; letter-spacing:1.5px; color:rgba(184,134,11,0.8); margin-bottom:4px;">Itinerary Curated For</div>
+      <div style="font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:600; color:var(--gold-light); line-height:1.1;">Ms. Kavita Thakker</div>
+      <div style="font-size:11px; color:rgba(255,255,255,0.35); margin-top:3px;">Group Lead · Placard Name · Group Ref: NT26IN-SRJ-0526</div>
+    </div>
+  </div>
+
+  <div class="pax-card" style="margin-bottom:44px;">
+    <div class="pax-grid">
+      <div class="pax-item pax-lead">
+        <div class="pax-avatar gold">KT</div>
+        <div>
+          <div class="pax-name">Ms. Kavita Thakker</div>
+          <div class="pax-note">Adult · Group Lead</div>
+        </div>
+      </div>
+      <div class="pax-item">
+        <div class="pax-avatar red">MM</div>
+        <div>
+          <div class="pax-name">Mr. Mirann Mitesh Thakkar</div>
+          <div class="pax-note">Adult</div>
+        </div>
+      </div>
+      <div class="pax-item">
+        <div class="pax-avatar gold">CM</div>
+        <div>
+          <div class="pax-name">Ms. Charissa Mitesh Thakkar</div>
+          <div class="pax-note">Adult</div>
+        </div>
+      </div>
+      <div class="pax-item">
+        <div class="pax-avatar red">TS</div>
+        <div>
+          <div class="pax-name">Ms. Tanishqa Dhaval Thakker</div>
+          <div class="pax-note">Adult</div>
+        </div>
+      </div>
+      <div class="pax-item">
+        <div class="pax-avatar gold">AV</div>
+        <div>
+          <div class="pax-name">Mstr. Aryaveer Thakker</div>
+          <div class="pax-note">Child (CHD)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FLIGHTS -->
+<div class="section">
+  <div class="section-title">Flights · Singapore Airlines</div>
+</div>
+<div style="padding: 0 40px;">
+  <div class="flights-grid" style="margin-bottom:44px;">
+    <div class="flight-card">
+      <div class="flight-route">Ahmedabad → Singapore</div>
+      <div class="flight-meta">SQ-505 · Airbus A350-900</div>
+      <div class="flight-times">
+        <div class="time-block">
+          <div class="time-big">22:50</div>
+          <div class="time-city">Ahmedabad (AMD)</div>
+          <div class="time-date">Mon, 25 May 2026 · T2</div>
+        </div>
+        <div class="flight-line"><span class="flight-dot">5h 50m</span></div>
+        <div class="time-block" style="text-align:right">
+          <div class="time-big">07:10</div>
+          <div class="time-city">Singapore (SIN)</div>
+          <div class="time-date">Tue, 26 May · T0</div>
+        </div>
+      </div>
+      <div class="flight-bottom">
+        <span><span class="sq-badge">SQ</span></span>
+        <span><span class="class-badge">Business Class</span></span>
+        <span style="font-size:11px">40K Baggage · Veg Hindu Meal</span>
+      </div>
+    </div>
+    <div class="flight-card">
+      <div class="flight-route">Singapore → Shanghai</div>
+      <div class="flight-meta">SQ-830 · Airbus A380-800</div>
+      <div class="flight-times">
+        <div class="time-block">
+          <div class="time-big">09:30</div>
+          <div class="time-city">Singapore (SIN)</div>
+          <div class="time-date">Tue, 26 May · T3</div>
+        </div>
+        <div class="flight-line"><span class="flight-dot">5h 35m</span></div>
+        <div class="time-block" style="text-align:right">
+          <div class="time-big">15:05</div>
+          <div class="time-city">Shanghai PVG</div>
+          <div class="time-date">Tue, 26 May · T2</div>
+        </div>
+      </div>
+      <div class="flight-bottom">
+        <span><span class="sq-badge">SQ</span></span>
+        <span><span class="class-badge">Business Class</span></span>
+        <span style="font-size:11px">40K Baggage · Veg Hindu Meal</span>
+      </div>
+    </div>
+    <div class="flight-card">
+      <div class="flight-route">Beijing → Singapore</div>
+      <div class="flight-meta">SQ-811 · Boeing 787 Dreamliner</div>
+      <div class="flight-times">
+        <div class="time-block">
+          <div class="time-big">09:25</div>
+          <div class="time-city">Beijing (PKX)</div>
+          <div class="time-date">Tue, 2 June 2026</div>
+        </div>
+        <div class="flight-line"><span class="flight-dot">6h 25m</span></div>
+        <div class="time-block" style="text-align:right">
+          <div class="time-big">15:50</div>
+          <div class="time-city">Singapore (SIN)</div>
+          <div class="time-date">Tue, 2 June · T0</div>
+        </div>
+      </div>
+      <div class="flight-bottom">
+        <span><span class="sq-badge">SQ</span></span>
+        <span><span class="class-badge">Business Class</span></span>
+        <span style="font-size:11px">40K Baggage · Veg Hindu Meal</span>
+      </div>
+    </div>
+    <div class="flight-card">
+      <div class="flight-route">Singapore → Ahmedabad</div>
+      <div class="flight-meta">SQ-504 · Airbus A350-900</div>
+      <div class="flight-times">
+        <div class="time-block">
+          <div class="time-big">18:35</div>
+          <div class="time-city">Singapore (SIN)</div>
+          <div class="time-date">Tue, 2 June · T3</div>
+        </div>
+        <div class="flight-line"><span class="flight-dot">5h 30m</span></div>
+        <div class="time-block" style="text-align:right">
+          <div class="time-big">21:35</div>
+          <div class="time-city">Ahmedabad (AMD)</div>
+          <div class="time-date">Tue, 2 June · T2</div>
+        </div>
+      </div>
+      <div class="flight-bottom">
+        <span><span class="sq-badge">SQ</span></span>
+        <span><span class="class-badge">Business Class</span></span>
+        <span style="font-size:11px">40K Baggage · Veg Hindu Meal</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TICKET & SEAT DETAILS -->
+<div class="section">
+  <div class="section-title">Ticket & Seat Details</div>
+</div>
+<div style="padding: 0 40px; display:flex; flex-direction:column; gap:14px; margin-bottom:44px;">
+
+  <!-- PNR Group 1 -->
+  <div class="pnr-group">
+    <div class="pnr-group-header">
+      <div class="pnr-group-title">PNR: 9QHA2Z &nbsp;·&nbsp; Ms. Kavita Thakker, Mr. Mirann Thakkar, Ms. Charissa Thakkar</div>
+      <span class="pnr-badge">3 Passengers</span>
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="seat-table" style="margin-bottom:0;">
+        <thead>
+          <tr>
+            <th>Passenger</th>
+            <th>AMD → SIN (SQ505)</th>
+            <th>SIN → PVG (SQ830)</th>
+            <th>PKX → SIN (SQ811)</th>
+            <th>SIN → AMD (SQ504)</th>
+            <th>Ticket No.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ms. Kavita A. Thakker</td>
+            <td><span class="seat-badge">14K</span></td>
+            <td><span class="seat-badge">17D</span></td>
+            <td><span class="seat-badge">14D</span></td>
+            <td><span class="seat-badge">12K</span></td>
+            <td style="font-family:monospace; font-size:11px; color:var(--muted);">6182476703775-76</td>
+          </tr>
+          <tr>
+            <td>Mr. Mirann M. Thakkar</td>
+            <td><span class="seat-badge">16K</span></td>
+            <td><span class="seat-badge">17F</span></td>
+            <td><span class="seat-badge">14F</span></td>
+            <td><span class="seat-badge">16D</span></td>
+            <td style="font-family:monospace; font-size:11px; color:var(--muted);">6182476703777-78</td>
+          </tr>
+          <tr>
+            <td>Ms. Charissa M. Thakkar</td>
+            <td><span class="seat-badge">17F</span></td>
+            <td><span class="seat-badge">17K</span></td>
+            <td><span class="seat-badge">14K</span></td>
+            <td><span class="seat-badge">16F</span></td>
+            <td style="font-family:monospace; font-size:11px; color:var(--muted);">6182476703779-80</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PNR Group 2 -->
+  <div class="pnr-group">
+    <div class="pnr-group-header">
+      <div class="pnr-group-title">PNR: 7AIOVX &nbsp;·&nbsp; Ms. Tanishqa Thakker, Mstr. Aryaveer Thakker</div>
+      <span class="pnr-badge">2 Passengers</span>
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="seat-table" style="margin-bottom:0;">
+        <thead>
+          <tr>
+            <th>Passenger</th>
+            <th>AMD → SIN (SQ505)</th>
+            <th>SIN → PVG (SQ830)</th>
+            <th>PKX → SIN (SQ811)</th>
+            <th>SIN → AMD (SQ504)</th>
+            <th>Ticket No.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ms. Tanishqa D. Thakker</td>
+            <td><span class="seat-badge">17A</span></td>
+            <td><span class="seat-badge">94F</span></td>
+            <td><span class="seat-badge">12F</span></td>
+            <td><span class="seat-badge">18K</span></td>
+            <td style="font-family:monospace; font-size:11px; color:var(--muted);">6185897602211-12</td>
+          </tr>
+          <tr>
+            <td>Mstr. Aryaveer Thakker (CHD)</td>
+            <td><span class="seat-badge">14A</span></td>
+            <td><span class="seat-badge">94D</span></td>
+            <td><span class="seat-badge">12D</span></td>
+            <td><span class="seat-badge">12F</span></td>
+            <td style="font-family:monospace; font-size:11px; color:var(--muted);">6185897602209-10</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<!-- HOTELS -->
+<div class="section">
+  <div class="section-title">Hotels</div>
+</div>
+<div style="padding: 0 40px;">
+  <div class="hotels-row" style="margin-bottom:44px;">
+    <div class="hotel-card">
+      <div class="hotel-city">Shanghai</div>
+      <div class="hotel-name">The Westin Bund Center</div>
+      <div class="hotel-dates">26 May – 30 May 2026 · 4 Nights</div>
+      <div class="hotel-guide">
+        <strong>Tour Guide:</strong> 李辉 Andrew<br>
+        <strong>Mobile:</strong> <a href="tel:+8613818662381" style="color:var(--red);text-decoration:none">+86 138 1866 2381</a>
+      </div>
+    </div>
+    <div class="hotel-card">
+      <div class="hotel-city">Beijing</div>
+      <div class="hotel-name">Pan Pacific Beijing</div>
+      <div class="hotel-dates">30 May – 2 June 2026 · 3 Nights</div>
+      <div class="hotel-guide">
+        <strong>Tour Guide:</strong> 康斌 Michael<br>
+        <strong>Mobile:</strong> <a href="tel:+8613911084076" style="color:var(--red);text-decoration:none">+86 139 1108 4076</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ITINERARY -->
+<div class="section">
+  <div class="section-title">Day-by-Day Itinerary</div>
+</div>
+<div class="days-container">
+
+  <!-- Day 1 -->
+  <div class="day-block">
+    <div class="day-left">
+      <div class="day-num">Day 1</div>
+      <div class="day-date">26 May</div>
+    </div>
+    <div class="day-right">
+      <div class="day-city-tag">Shanghai · Arrival</div>
+      <div class="day-headline">Welcome to the Pearl of the Orient</div>
+      <!-- DAY 1 PHOTO: replace src="" with your image path -->
+      <div class="day-photo">
+        <img src="" alt="Day 1 – Nanjing Road & The Bund" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+        <div class="day-photo-placeholder">
+          <div class="day-photo-icon">📷</div>
+          <div class="day-photo-label">Day 1 Photo</div>
+          <div class="day-photo-sublabel">src="your-image-path-here"</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-time">15:35</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Touch down in Shanghai — your Chinese adventure begins!</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">16:40</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Meet your guide <span class="highlight">Andrew (李辉)</span> and transfer to The Westin Bund Center in air-conditioned comfort.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">17:40</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Hotel check-in and a well-deserved rest to refresh after the journey.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">18:30</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Evening stroll and shopping along the iconic <span class="highlight">Nanjing Road & The Bund</span> — Shanghai's dazzling waterfront promenade lit up at night.</div>
+        </div>
+      </div>
+      <div class="overnight-tag">🌙 Overnight at The Westin Bund Center, Shanghai</div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day-block">
+    <div class="day-left">
+      <div class="day-num">Day 2</div>
+      <div class="day-date">27 May</div>
+    </div>
+    <div class="day-right">
+      <div class="day-city-tag">Shanghai</div>
+      <div class="day-headline">Legoland & Oriental Tower Heights</div>
+      <!-- DAY 2 PHOTO: replace src="" with your image path -->
+      <div class="day-photo">
+        <img src="" alt="Day 2 – Legoland & Oriental Pearl Tower" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+        <div class="day-photo-placeholder">
+          <div class="day-photo-icon">📷</div>
+          <div class="day-photo-label">Day 2 Photo</div>
+          <div class="day-photo-sublabel">src="your-image-path-here"</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-time">09:00</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">After breakfast, head to <span class="highlight">Legoland Shanghai</span> for a thrilling full day of rides, shows, and colourful worlds — pure joy for the whole family!</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">18:30</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Evening visit to the <span class="highlight">Oriental Pearl TV Tower</span> (2nd Ball observation deck) — spectacular panoramic views of the glittering Shanghai skyline.</div>
+        </div>
+      </div>
+      <div class="overnight-tag">🌙 Overnight at The Westin Bund Center, Shanghai</div>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day-block">
+    <div class="day-left">
+      <div class="day-num">Day 3</div>
+      <div class="day-date">28 May</div>
+    </div>
+    <div class="day-right">
+      <div class="day-city-tag">Shanghai</div>
+      <div class="day-headline">Ancient Waterways & Silk Road Shopping</div>
+      <!-- DAY 3 PHOTO: replace src="" with your image path -->
+      <div class="day-photo">
+        <img src="" alt="Day 3 – Zhujiajiao Water Town" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+        <div class="day-photo-placeholder">
+          <div class="day-photo-icon">📷</div>
+          <div class="day-photo-label">Day 3 Photo</div>
+          <div class="day-photo-sublabel">src="your-image-path-here"</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-time">09:00</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Journey to <span class="highlight">Zhujiajiao Water Town</span> — a beautifully preserved ancient canal town, often called the "Venice of Shanghai," with stone bridges, boat rides, and traditional architecture.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">15:00</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Afternoon shopping at the famous <span class="highlight">AP Market (Science & Technology Market)</span> — great for electronics, accessories, and souvenirs.</div>
+        </div>
+      </div>
+      <div class="overnight-tag">🌙 Overnight at The Westin Bund Center, Shanghai</div>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="day-block">
+    <div class="day-left">
+      <div class="day-num">Day 4</div>
+      <div class="day-date">29 May</div>
+    </div>
+    <div class="day-right">
+      <div class="day-city-tag">Shanghai</div>
+      <div class="day-headline">A Magical Day at Disneyland</div>
+      <!-- DAY 4 PHOTO: replace src="" with your image path -->
+      <div class="day-photo">
+        <img src="" alt="Day 4 – Shanghai Disneyland" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+        <div class="day-photo-placeholder">
+          <div class="day-photo-icon">📷</div>
+          <div class="day-photo-label">Day 4 Photo</div>
+          <div class="day-photo-sublabel">src="your-image-path-here"</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-time">09:00</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Full day at <span class="highlight">Shanghai Disneyland Park</span> — Asia's most spectacular Disney destination! Explore enchanted kingdoms, world-class rides, and a mesmerising evening parade.</div>
+        </div>
+      </div>
+      <div class="overnight-tag">🌙 Overnight at The Westin Bund Center, Shanghai</div>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day-block">
+    <div class="day-left">
+      <div class="day-num">Day 5</div>
+      <div class="day-date">30 May</div>
+    </div>
+    <div class="day-right">
+      <div class="day-city-tag">Shanghai → Beijing</div>
+      <div class="day-headline">Bullet Train to the Imperial Capital</div>
+      <!-- DAY 5 PHOTO: replace src="" with your image path -->
+      <div class="day-photo">
+        <img src="" alt="Day 5 – High Speed Bullet Train G14" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+        <div class="day-photo-placeholder">
+          <div class="day-photo-icon">📷</div>
+          <div class="day-photo-label">Day 5 Photo</div>
+          <div class="day-photo-sublabel">src="your-image-path-here"</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-time">09:00</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Transfer to the railway station — hotel checkout and luggage arrangements.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">11:00</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Board <span class="highlight">High-Speed Bullet Train G14</span> to Beijing in 1st Class comfort. Sit back and watch China's landscape glide past at 350 km/h!</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">15:31</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Arrive Beijing. Meet guide <span class="highlight">Michael (康斌)</span> and transfer to the luxurious Pan Pacific Beijing for check-in.</div>
+        </div>
+      </div>
+      <div class="overnight-tag">🌙 Overnight at Pan Pacific Beijing</div>
+    </div>
+  </div>
+
+  <!-- Day 6 -->
+  <div class="day-block">
+    <div class="day-left">
+      <div class="day-num">Day 6</div>
+      <div class="day-date">31 May</div>
+    </div>
+    <div class="day-right">
+      <div class="day-city-tag">Beijing</div>
+      <div class="day-headline">The Heart of Imperial China</div>
+      <!-- DAY 6 PHOTO: replace src="" with your image path -->
+      <div class="day-photo">
+        <img src="" alt="Day 6 – Tiananmen Square & Forbidden City" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+        <div class="day-photo-placeholder">
+          <div class="day-photo-icon">📷</div>
+          <div class="day-photo-label">Day 6 Photo</div>
+          <div class="day-photo-sublabel">src="your-image-path-here"</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-time">09:00</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Visit <span class="highlight">Tiananmen Square</span> — the world's largest public square — and walk into the magnificent <span class="highlight">Forbidden City (Palace Museum)</span>, home to 24 emperors over 500 years.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">14:30</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Free shopping time at <span class="highlight">Xiushui Market (Silk Street)</span> — Beijing's famous multi-storey bazaar for silk, cashmere, and souvenirs.</div>
+        </div>
+      </div>
+      <div class="overnight-tag">🌙 Overnight at Pan Pacific Beijing</div>
+    </div>
+  </div>
+
+  <!-- Day 7 -->
+  <div class="day-block">
+    <div class="day-left">
+      <div class="day-num">Day 7</div>
+      <div class="day-date">1 June</div>
+    </div>
+    <div class="day-right">
+      <div class="day-city-tag">Beijing</div>
+      <div class="day-headline">The Great Wall & Imperial Splendours</div>
+      <!-- DAY 7 PHOTO: replace src="" with your image path -->
+      <div class="day-photo">
+        <img src="" alt="Day 7 – The Great Wall at Juyongguan" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+        <div class="day-photo-placeholder">
+          <div class="day-photo-icon">📷</div>
+          <div class="day-photo-label">Day 7 Photo</div>
+          <div class="day-photo-sublabel">src="your-image-path-here"</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-time">09:00</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Journey to <span class="highlight">The Great Wall at Juyongguan Pass</span> — one of the most accessible and dramatic sections of the world's greatest man-made wonder. A must-photograph moment!</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">14:00</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Visit a <span class="highlight">Jade Factory</span> — discover the artistry and cultural significance of Chinese jade craftsmanship. (Compulsory entry; no obligation to purchase.)</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">15:30</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Photo stop at the iconic <span class="highlight">Olympic Stadium (Bird's Nest)</span> and the stunning Water Cube from the 2008 Beijing Games.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">16:30</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Serene visit to the <span class="highlight">Summer Palace</span> — the exquisite imperial garden retreat, with Kunming Lake, marble boats, and pavilion walkways.</div>
+        </div>
+      </div>
+      <div class="overnight-tag">🌙 Last Night · Pan Pacific Beijing</div>
+    </div>
+  </div>
+
+  <!-- Day 8 -->
+  <div class="day-block">
+    <div class="day-left">
+      <div class="day-num">Day 8</div>
+      <div class="day-date">2 June</div>
+    </div>
+    <div class="day-right">
+      <div class="day-city-tag">Beijing → Ahmedabad</div>
+      <div class="day-headline">Until Next Time, China!</div>
+      <!-- DAY 8 PHOTO: replace src="" with your image path -->
+      <div class="day-photo">
+        <img src="" alt="Day 8 – Departure from Beijing" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+        <div class="day-photo-placeholder">
+          <div class="day-photo-icon">📷</div>
+          <div class="day-photo-label">Day 8 Photo</div>
+          <div class="day-photo-sublabel">src="your-image-path-here"</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-time">06:00</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Early breakfast at the hotel. Pack up your memories and mementos!</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">~07:00</div>
+          <div class="tl-dot"></div>
+          <div class="tl-text">Transfer to Beijing PKX Airport for departure. Check-in for <span class="highlight">SQ-811 (09:25) to Singapore</span>, then connect to <span class="highlight">SQ-504 (18:35) back to Ahmedabad</span>, arriving 21:35.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- INCLUSIONS -->
+<div class="section">
+  <div class="section-title">What's Included & Excluded</div>
+</div>
+<div style="padding: 0 40px;">
+  <div class="incl-grid" style="margin-bottom:44px;">
+    <div class="incl-card">
+      <h3 class="green">✓ Included</h3>
+      <ul class="incl-list yes">
+        <li>All sightseeing as listed above with first gate entrance fees</li>
+        <li>English-speaking local guide in both cities with private air-conditioned transfers</li>
+        <li>2 bottles of mineral water per person, per day</li>
+        <li>1st Class high-speed bullet train: Shanghai → Beijing (G14)</li>
+        <li>Transfers to Indian dinner restaurants (meal cost on own)</li>
+        <li>Tips for guide and driver throughout the tour</li>
+      </ul>
+    </div>
+    <div class="incl-card">
+      <h3 class="red">✗ Not Included</h3>
+      <ul class="incl-list no">
+        <li>International and domestic flight tickets</li>
+        <li>Personal expenses, optional activities, or shopping purchases</li>
+        <li>Anything not specifically listed under inclusions</li>
+      </ul>
+      <div style="margin-top:14px; padding:12px; background:#fff8f6; border:1px solid rgba(192,57,43,0.2); border-radius:8px;">
+        <div style="font-size:11px; color:var(--red); font-weight:500; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">Compulsory Shopping Stops</div>
+        <div style="font-size:12px; color:var(--muted);">Entry is mandatory (no purchase obligation): <strong style="color:var(--ink)">Jade Factory</strong>, <strong style="color:var(--ink)">Pearl Factory</strong> (Beijing), <strong style="color:var(--ink)">Silk Factory</strong> (Shanghai). Minimum 30 min stay per shop.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACTS -->
+<div class="section">
+  <div class="section-title">Emergency & Guide Contacts</div>
+</div>
+<div style="padding: 0 40px;">
+  <div class="contact-card" style="margin-bottom:44px;">
+    <div class="contact-item">
+      <div class="contact-role">Shanghai Guide</div>
+      <div class="contact-name">Andrew · 李辉</div>
+      <div class="contact-phone">+86 138 1866 2381</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-role">Beijing Guide</div>
+      <div class="contact-name">Michael · 康斌</div>
+      <div class="contact-phone">+86 139 1108 4076</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-role">Emergency (All China)</div>
+      <div class="contact-name">Ms. Leah</div>
+      <div class="contact-phone">+86 185 3055 2067</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-role">Your Travel Agent</div>
+      <div class="contact-name">Shreeji Bapa Aviation</div>
+      <div class="contact-phone">+91 99250 27395</div>
+    </div>
+  </div>
+</div>
+
+<!-- IMPORTANT NOTES -->
+<div class="section">
+  <div class="section-title">Important Notes</div>
+</div>
+<div style="padding: 0 40px;">
+  <div class="notes-card" style="margin-bottom:0;">
+    <h3>Please Keep in Mind</h3>
+    <div class="notes-list">
+      <div class="note-item">
+        <div class="note-num">1</div>
+        <div>All arrangements are confirmed. However, guide-directed changes may occur due to flight/train schedule shifts or weather. The local guide's judgment on the ground is final.</div>
+      </div>
+      <div class="note-item">
+        <div class="note-num">2</div>
+        <div>Changes requested during the tour cannot be guaranteed. Your guide will do their best to accommodate.</div>
+      </div>
+      <div class="note-item">
+        <div class="note-num">3</div>
+        <div><strong>Hotel Check-in after 14:00 / Check-out before 12:00.</strong> Early check-in or late checkout is subject to availability and may incur a surcharge.</div>
+      </div>
+      <div class="note-item">
+        <div class="note-num">4</div>
+        <div>A credit card deposit may be blocked/required at hotel check-in per hotel policy.</div>
+      </div>
+      <div class="note-item">
+        <div class="note-num">5</div>
+        <div>Room type (double/twin, interconnecting) is on request basis — subject to availability at check-in.</div>
+      </div>
+      <div class="note-item">
+        <div class="note-num">6</div>
+        <div>Bullet train seat confirmation typically occurs 3–5 days before departure. During major Chinese holidays it may only be confirmed on the travel day itself.</div>
+      </div>
+      <div class="note-item">
+        <div class="note-num">7</div>
+        <div>No refund for any unused services — tours, rooms, meals, or transfers.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PACKING LIST -->
+<div class="section">
+  <div class="section-title">Pack Smart</div>
+</div>
+<div class="pack-section">
+
+  <!-- Weather context -->
+  <div class="weather-strip">
+    <div class="weather-card">
+      <div class="weather-icon">🌦</div>
+      <div>
+        <div class="weather-city">Shanghai · 26–30 May</div>
+        <div class="weather-temp">24–29°C</div>
+        <div class="weather-desc">Warm & humid. Early plum rain season — expect occasional showers, especially afternoons.</div>
+        <div class="weather-tags">
+          <span class="weather-tag">Humid</span>
+          <span class="weather-tag">Showers likely</span>
+          <span class="weather-tag">Sunny mornings</span>
+        </div>
+      </div>
+    </div>
+    <div class="weather-card">
+      <div class="weather-icon">☀️</div>
+      <div>
+        <div class="weather-city">Beijing · 30 May – 2 June</div>
+        <div class="weather-temp">18–30°C</div>
+        <div class="weather-desc">Hot dry days, cool evenings. Mostly sunny with occasional brief thunderstorms. Comfortable humidity.</div>
+        <div class="weather-tags">
+          <span class="weather-tag">Dry heat</span>
+          <span class="weather-tag">Sunny</span>
+          <span class="weather-tag">Cool nights</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checklist -->
+  <div style="background:var(--card); border:1px solid var(--border); border-radius:12px; padding:24px; margin-bottom:14px;">
+    <div class="pack-grid">
+
+      <div class="pack-col">
+        <div class="pack-col-title">👗 Clothing</div>
+        <div class="pack-items">
+          <div class="pack-item"><div class="pack-check"></div>Light breathable tops (3–4)</div>
+          <div class="pack-item"><div class="pack-check"></div>One light jacket / cardigan</div>
+          <div class="pack-item"><div class="pack-check"></div>Comfortable walking trousers</div>
+          <div class="pack-item"><div class="pack-check"></div>One smart outfit for dinners</div>
+          <div class="pack-item"><div class="pack-check"></div>Compact umbrella or raincoat</div>
+          <div class="pack-item"><div class="pack-check"></div>Comfortable walking shoes</div>
+        </div>
+      </div>
+
+      <div class="pack-col">
+        <div class="pack-col-title">📄 Documents</div>
+        <div class="pack-items">
+          <div class="pack-item"><div class="pack-check"></div>Passport (valid 6+ months)</div>
+          <div class="pack-item"><div class="pack-check"></div>China visa</div>
+          <div class="pack-item"><div class="pack-check"></div>Printed flight tickets</div>
+          <div class="pack-item"><div class="pack-check"></div>This itinerary (printed)</div>
+          <div class="pack-item"><div class="pack-check"></div>Travel insurance papers</div>
+          <div class="pack-item"><div class="pack-check"></div>Emergency contact card</div>
+        </div>
+      </div>
+
+      <div class="pack-col">
+        <div class="pack-col-title">🔌 Tech</div>
+        <div class="pack-items">
+          <div class="pack-item"><div class="pack-check"></div>Power bank (essential!)</div>
+          <div class="pack-item"><div class="pack-check"></div>Universal adapter (Type A)</div>
+          <div class="pack-item"><div class="pack-check"></div>Phone + camera + chargers</div>
+          <div class="pack-item"><div class="pack-check"></div>VPN installed before flying</div>
+          <div class="pack-item"><div class="pack-check"></div>WeChat / Alipay set up</div>
+          <div class="pack-item"><div class="pack-check"></div>Offline maps downloaded</div>
+        </div>
+      </div>
+
+      <div class="pack-col">
+        <div class="pack-col-title">💊 Health & Comfort</div>
+        <div class="pack-items">
+          <div class="pack-item"><div class="pack-check"></div>Personal medicines</div>
+          <div class="pack-item"><div class="pack-check"></div>Sunscreen SPF 30+</div>
+          <div class="pack-item"><div class="pack-check"></div>Hand sanitiser & wet wipes</div>
+          <div class="pack-item"><div class="pack-check"></div>Pocket tissues (always carry)</div>
+          <div class="pack-item"><div class="pack-check"></div>Snacks for Aryaveer</div>
+          <div class="pack-item"><div class="pack-check"></div>Small foldable shopping bag</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="pack-tip">
+    <div class="pack-tip-icon">💡</div>
+    <div class="pack-tip-text"><strong>Good to know:</strong> Public toilets in China often lack tissue — always carry pocket tissues. Most shopping, transport & food in China runs on WeChat Pay or Alipay; set these up before you fly. Leave some suitcase space — Beijing's silk and jade markets are hard to resist!</div>
+  </div>
+
+</div>
+
+<!-- FAREWELL -->
+<div class="farewell-section">
+  <div class="farewell-top-border"></div>
+  <div class="farewell-bg-text">上海 北京</div>
+
+  <div class="farewell-inner">
+    <div class="farewell-eyebrow">A personal note from us</div>
+    <div class="farewell-wish">Have a <em>Wonderful</em><br>Journey.</div>
+    <div class="farewell-name-line">— Ms. Kavita Thakker &amp; family —</div>
+    <div class="farewell-divider"><span class="farewell-divider-icon">✦ ✦ ✦</span></div>
+    <p class="farewell-msg">
+      May your suitcases come home heavier than they left,<br>
+      your camera fuller, and your hearts a little wider.<br>
+      We're proud to send you on this one.
+    </p>
+    <div class="farewell-sig">
+      With warmth &amp; care,
+      <span>Shreeji Bapa Aviation</span>
+    </div>
+  </div>
+
+  <div class="farewell-logo-card">
+    <!-- FAREWELL LOGO: add src="your-logo-path" inside the img tag below -->
+    <div class="farewell-logo-placeholder">
+      <img src="" alt="Shreeji Bapa Aviation" onerror="this.style.display='none'">
+      <div class="farewell-logo-placeholder-text">Logo here</div>
+    </div>
+    <div>
+      <div class="farewell-logo-name">Shreeji Bapa Aviation</div>
+      <div class="farewell-logo-contact">📞 9925027395 &nbsp;·&nbsp; ✉ shreejibapa_aviation@yahoo.com</div>
+      <div class="farewell-logo-addr">B/619, Navratna Corporate Park, Nr. Ashok Vatika, ISCON-Ambli Road, Ahmedabad 380058</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
