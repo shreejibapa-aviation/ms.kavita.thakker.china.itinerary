@@ -612,19 +612,37 @@
   .farewell-msg strong { color: rgba(255,255,255,0.82); font-weight: 400; }
 
   @media print {
-    .hero { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    .flight-card::before { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  @page {
+  size: auto;
+  margin: 12mm;
+}
+
+  body {
+    background: white !important;
   }
+
+  .print-page {
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .print-page:last-child {
+    page-break-after: auto;
+  }
+
+}
+  
 </style>
 </head>
 <body>
-
+<div class="print-page">
 <!-- HERO -->
 <div class="hero">
   <div class="logo-row">
     <!-- LOGO: add src="your-logo-path" inside the img tag below -->
     <div class="logo-placeholder">
-      <img src="" alt="Shreeji Bapa Aviation Logo" onerror="this.style.display='none'">
+      <img src="assets/sba-logo.png" alt="Shreeji Bapa Aviation Logo" onerror="this.style.display='none'">
       <div class="logo-placeholder-label">Logo here</div>
     </div>
     <div class="logo-text">
@@ -739,7 +757,9 @@
     </div>
   </div>
 </div>
+</div>
 
+<div class="print-page">
 <!-- FLIGHTS -->
 <div class="section">
   <div class="section-title">Flights · Singapore Airlines</div>
@@ -932,7 +952,9 @@
   </div>
 
 </div>
+</div>
 
+<div class="print-page">
 <!-- HOTELS -->
 <div class="section">
   <div class="section-title">Hotels</div>
@@ -960,10 +982,15 @@
   </div>
 </div>
 
+</div>
+
+<div class="print-page">
+
 <!-- ITINERARY -->
 <div class="section">
   <div class="section-title">Day-by-Day Itinerary</div>
 </div>
+
 <div class="days-container">
 
   <!-- Day 1 -->
@@ -977,7 +1004,7 @@
       <div class="day-headline">Welcome to the Pearl of the Orient</div>
       <!-- DAY 1 PHOTO: replace src="" with your image path -->
       <div class="day-photo">
-        <img src="" alt="Day 1 – Nanjing Road & The Bund" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+        <img src="assets/day-1-shanghai-bund.jpg" alt="Day 1 – Nanjing Road & The Bund" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
         <div class="day-photo-placeholder">
           <div class="day-photo-icon">📷</div>
           <div class="day-photo-label">Day 1 Photo</div>
@@ -1021,7 +1048,7 @@
       <div class="day-headline">Legoland & Oriental Tower Heights</div>
       <!-- DAY 2 PHOTO: replace src="" with your image path -->
       <div class="day-photo">
-        <img src="" alt="Day 2 – Legoland & Oriental Pearl Tower" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+       <img src="assets/day-2-legoland-oriental-tower.jpg" alt="Day 2 – Legoland & Oriental Pearl Tower" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
         <div class="day-photo-placeholder">
           <div class="day-photo-icon">📷</div>
           <div class="day-photo-label">Day 2 Photo</div>
@@ -1043,7 +1070,9 @@
       <div class="overnight-tag">🌙 Overnight at The Westin Bund Center, Shanghai</div>
     </div>
   </div>
+  </div>
 
+  <div class="print-page">
   <!-- Day 3 -->
   <div class="day-block">
     <div class="day-left">
@@ -1055,7 +1084,7 @@
       <div class="day-headline">Ancient Waterways & Silk Road Shopping</div>
       <!-- DAY 3 PHOTO: replace src="" with your image path -->
       <div class="day-photo">
-        <img src="" alt="Day 3 – Zhujiajiao Water Town" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+        <img src="assets/day-3-zhujiajiao-water-town.jpg" alt="Day 3 – Zhujiajiao Water Town" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
         <div class="day-photo-placeholder">
           <div class="day-photo-icon">📷</div>
           <div class="day-photo-label">Day 3 Photo</div>
@@ -1089,7 +1118,7 @@
       <div class="day-headline">A Magical Day at Disneyland</div>
       <!-- DAY 4 PHOTO: replace src="" with your image path -->
       <div class="day-photo">
-        <img src="" alt="Day 4 – Shanghai Disneyland" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+        <img src="assets/day-4-shanghai-disneyland.jpg" alt="Day 4 – Shanghai Disneyland" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
         <div class="day-photo-placeholder">
           <div class="day-photo-icon">📷</div>
           <div class="day-photo-label">Day 4 Photo</div>
@@ -1106,7 +1135,9 @@
       <div class="overnight-tag">🌙 Overnight at The Westin Bund Center, Shanghai</div>
     </div>
   </div>
+  </div>
 
+  <div class="print-page">
   <!-- Day 5 -->
   <div class="day-block">
     <div class="day-left">
@@ -1118,7 +1149,7 @@
       <div class="day-headline">Bullet Train to the Imperial Capital</div>
       <!-- DAY 5 PHOTO: replace src="" with your image path -->
       <div class="day-photo">
-        <img src="" alt="Day 5 – High Speed Bullet Train G14" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+        <img src="assets/day-5-bullet-train.jpg" alt="Day 5 – High Speed Bullet Train G14" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
         <div class="day-photo-placeholder">
           <div class="day-photo-icon">📷</div>
           <div class="day-photo-label">Day 5 Photo</div>
@@ -1157,7 +1188,7 @@
       <div class="day-headline">The Heart of Imperial China</div>
       <!-- DAY 6 PHOTO: replace src="" with your image path -->
       <div class="day-photo">
-        <img src="" alt="Day 6 – Tiananmen Square & Forbidden City" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+        <img src="assets/day-6-forbidden-city.jfif" alt="Day 6 – Tiananmen Square & Forbidden City" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
         <div class="day-photo-placeholder">
           <div class="day-photo-icon">📷</div>
           <div class="day-photo-label">Day 6 Photo</div>
@@ -1179,7 +1210,9 @@
       <div class="overnight-tag">🌙 Overnight at Pan Pacific Beijing</div>
     </div>
   </div>
+  </div>
 
+  <div class="print-page">  
   <!-- Day 7 -->
   <div class="day-block">
     <div class="day-left">
@@ -1191,7 +1224,7 @@
       <div class="day-headline">The Great Wall & Imperial Splendours</div>
       <!-- DAY 7 PHOTO: replace src="" with your image path -->
       <div class="day-photo">
-        <img src="" alt="Day 7 – The Great Wall at Juyongguan" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+        <img src="assets/day-7-great-wall.jpg" alt="Day 7 – The Great Wall at Juyongguan" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
         <div class="day-photo-placeholder">
           <div class="day-photo-icon">📷</div>
           <div class="day-photo-label">Day 7 Photo</div>
@@ -1235,7 +1268,7 @@
       <div class="day-headline">Until Next Time, China!</div>
       <!-- DAY 8 PHOTO: replace src="" with your image path -->
       <div class="day-photo">
-        <img src="" alt="Day 8 – Departure from Beijing" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
+        <img src="assets/day-8-beijing-departure.jpg" alt="Day 8 – Departure from Beijing" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
         <div class="day-photo-placeholder">
           <div class="day-photo-icon">📷</div>
           <div class="day-photo-label">Day 8 Photo</div>
@@ -1258,7 +1291,9 @@
   </div>
 
 </div>
+</div>
 
+<div class="print-page">  
 <!-- INCLUSIONS -->
 <div class="section">
   <div class="section-title">What's Included & Excluded</div>
@@ -1359,7 +1394,9 @@
     </div>
   </div>
 </div>
+</div>  
 
+<div class="print-page">  
 <!-- PACKING LIST -->
 <div class="section">
   <div class="section-title">Pack Smart</div>
@@ -1482,7 +1519,7 @@
   <div class="farewell-logo-card">
     <!-- FAREWELL LOGO: add src="your-logo-path" inside the img tag below -->
     <div class="farewell-logo-placeholder">
-      <img src="" alt="Shreeji Bapa Aviation" onerror="this.style.display='none'">
+      <img src="assets/sba-logo.png" alt="Shreeji Bapa Aviation Logo" onerror="this.style.display='none'">
       <div class="farewell-logo-placeholder-text">Logo here</div>
     </div>
     <div>
@@ -1492,6 +1529,7 @@
     </div>
   </div>
 </div>
+</div>  
 
 </body>
 </html>
