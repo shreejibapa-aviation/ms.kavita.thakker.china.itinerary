@@ -367,6 +367,7 @@
   gap: 0 24px;
   margin-bottom: 0;
   position: relative;
+  align-items: start;
 }
   .day-left {
   padding-top: 6px;
@@ -385,7 +386,9 @@
   transform: translateX(-50%);
   background: var(--border);
 }
-  .day-block:last-child .day-left::after { display: none; }
+  .day-block:last-child .day-left::after {
+  display: block;
+}
   .day-num { background: var(--red); color: white; font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; text-align: center; padding: 6px 4px; border-radius: 8px; margin-bottom: 4px; }
   .day-date { font-size: 11px; color: var(--muted); text-align: center; }
   .day-right { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 22px; margin-bottom: 12px; }
@@ -623,6 +626,20 @@
   .farewell-msg { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.85; margin-bottom: 48px; font-weight: 300; }
   .farewell-msg strong { color: rgba(255,255,255,0.82); font-weight: 400; }
 
+  .day-left::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: 1px;
+  height: 46px;
+  transform: translateX(-50%);
+  background: var(--border);
+}
+
+  .day-block:first-child .day-left::before {
+  display: none;
+}
  @media print {
 
   @page {
@@ -697,10 +714,6 @@
   padding: 7px 10px;
 }
 
-  .day-photo img {
-    max-height: 155px;
-  }
-
   .timeline {
     gap: 7px;
   }
@@ -713,6 +726,13 @@
     margin-top: 8px;
     font-size: 10px;
   }
+   .days-container {
+  page-break-inside: avoid;
+}
+
+.day-photo img {
+  max-height: 135px;
+}
 
   .day-block,
   .day-right,
@@ -1073,6 +1093,23 @@
   </div>
 </div>
 
+<div style="
+    margin:18px 40px 0;
+    background:#fff5f3;
+    border:1px solid rgba(192,57,43,0.18);
+    border-left:4px solid rgba(192,57,43,0.55);
+    border-radius:10px;
+    padding:14px 16px;
+    color:#7a3128;
+    font-size:13px;
+    line-height:1.7;
+  ">
+    <strong style="color:#C0392B;">Important Hotel Note:</strong><br>
+    In both above hotels, third person breakfast and extra bed charges (if applicable) are to be paid directly at the hotel during check-in/check-out.
+  </div>
+
+</div>
+
 <!-- ITINERARY -->
 <div class="section">
   <div class="section-title">Day-by-Day Itinerary</div>
@@ -1224,7 +1261,7 @@
     </div>
   </div>
   </div>
-  
+
   <!-- Day 5 -->
   <div class="day-block">
     <div class="day-left">
@@ -1237,7 +1274,7 @@
       <!-- DAY 5 PHOTO: replace src="" with your image path -->
       <div class="day-photo">
         <img src="assets/day-5-bullet-train.jpg" alt="Day 5 – High Speed Bullet Train G14" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
-        <div class="day-photo-placeholder">
+        <div class="day-photo-placeholder">  
           <div class="day-photo-icon">📷</div>
           <div class="day-photo-label">Day 5 Photo</div>
           <div class="day-photo-sublabel">src="your-image-path-here"</div>
@@ -1276,7 +1313,7 @@
       <!-- DAY 6 PHOTO: replace src="" with your image path -->
       <div class="day-photo">
         <img src="assets/day-6-forbidden-city.jfif" alt="Day 6 – Tiananmen Square & Forbidden City" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
-        <div class="day-photo-placeholder">
+        <div class="day-photo-placeholder">  
           <div class="day-photo-icon">📷</div>
           <div class="day-photo-label">Day 6 Photo</div>
           <div class="day-photo-sublabel">src="your-image-path-here"</div>
@@ -1314,8 +1351,8 @@
       <!-- DAY 7 PHOTO: replace src="" with your image path -->
       <div class="day-photo">
         <img src="assets/day-7-great-wall.jpg" alt="Day 7 – The Great Wall at Juyongguan" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
-        <div class="day-photo-placeholder">
-          <div class="day-photo-icon">📷</div>
+        <div class="day-photo-placeholder">  
+        <div class="day-photo-icon">📷</div>
           <div class="day-photo-label">Day 7 Photo</div>
           <div class="day-photo-sublabel">src="your-image-path-here"</div>
         </div>
@@ -1358,8 +1395,8 @@
       <!-- DAY 8 PHOTO: replace src="" with your image path -->
       <div class="day-photo">
         <img src="assets/day-8-beijing-departure.jpg" alt="Day 8 – Departure from Beijing" onerror="this.style.display='none'" onload="this.parentElement.querySelector('.day-photo-placeholder').style.display='none'">
-        <div class="day-photo-placeholder">
-          <div class="day-photo-icon">📷</div>
+        <div class="day-photo-placeholder">  
+        <div class="day-photo-icon">📷</div>
           <div class="day-photo-label">Day 8 Photo</div>
           <div class="day-photo-sublabel">src="your-image-path-here"</div>
         </div>
