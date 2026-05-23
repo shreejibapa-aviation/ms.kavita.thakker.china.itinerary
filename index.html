@@ -348,16 +348,21 @@
 
   /* ——— DAY PHOTO BOX ——— */
   .day-photo {
-    width: 100%; height: 200px;
-    border-radius: 8px; overflow: hidden;
-    margin-bottom: 16px;
-    border: 1px dashed rgba(184,134,11,0.4);
-    background: var(--accent-bg);
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    position: relative;
-  }
-  .day-photo img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 8px; }
+  width: 100%;
+  height: 240px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  border: 1px dashed rgba(184,134,11,0.4);
+  background: var(--accent-bg);
+  position: relative;
+}
+  .day-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #f8f6f1;
+}
   .day-photo-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; width: 100%; height: 100%; }
   .day-photo-icon { width: 36px; height: 36px; border-radius: 50%; background: rgba(184,134,11,0.12); border: 1px dashed rgba(184,134,11,0.5); display: flex; align-items: center; justify-content: center; font-size: 16px; }
   .day-photo-label { font-size: 11px; color: var(--gold); font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; }
@@ -622,6 +627,17 @@
     background: white !important;
   }
 
+  .day-block,
+.day-right,
+.flight-card,
+.hotel-card,
+.pax-card,
+.incl-card,
+.notes-card {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
   .print-page {
     page-break-after: always;
     break-after: page;
@@ -642,7 +658,7 @@
   <div class="logo-row">
     <!-- LOGO: add src="your-logo-path" inside the img tag below -->
     <div class="logo-placeholder">
-      <img src="assets/sba-logo.png" alt="Shreeji Bapa Aviation Logo" onerror="this.style.display='none'">
+      <img src="assets/sba-logo.jpg" alt="Shreeji Bapa Aviation Logo" onerror="this.style.display='none'">
       <div class="logo-placeholder-label">Logo here</div>
     </div>
     <div class="logo-text">
@@ -1519,7 +1535,7 @@
   <div class="farewell-logo-card">
     <!-- FAREWELL LOGO: add src="your-logo-path" inside the img tag below -->
     <div class="farewell-logo-placeholder">
-      <img src="assets/sba-logo.png" alt="Shreeji Bapa Aviation Logo" onerror="this.style.display='none'">
+      <img src="assets/sba-logo.jpg" alt="Shreeji Bapa Aviation Logo" onerror="this.style.display='none'">
       <div class="farewell-logo-placeholder-text">Logo here</div>
     </div>
     <div>
